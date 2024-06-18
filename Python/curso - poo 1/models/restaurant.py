@@ -33,9 +33,9 @@ class Restaurante:
     @property
     def media_avaliacao(self):
         if not self._avaliacao:
-            return 0
+            return 5.0
 
         soma_das_notas = sum(avalicao._nota for avalicao in self._avaliacao)
         qtd_notas = len(self._avaliacao)
         media = round(soma_das_notas / qtd_notas, 1)
-        return media
+        return 5.0 if media >= 5.0 else media

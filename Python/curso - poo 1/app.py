@@ -8,6 +8,9 @@ restaurante_praca.receber_avaliacao('Eduardo', 10)
 restaurante_praca.receber_avaliacao('Fulano', 5)
 restaurante_praca.receber_avaliacao('Ciclano', 2)
 
+restaurante_beto.receber_avaliacao('fulano', 2)
+restaurante_beto.receber_avaliacao('fulano2', 1)
+
 def main():
     Restaurante.listar_restaurantes()
 
