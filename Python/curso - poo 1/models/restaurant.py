@@ -26,4 +26,6 @@ class Restaurante:
     def alterar_estado(self):
         self._ativo = not self._ativo
 
-    
+    def receber_avaliacao(self, cliente, nota):
+        avalicao = Avalicao(cliente, nota)
+        self._avaliacao.append(avalicao)
