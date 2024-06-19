@@ -1,18 +1,18 @@
 from models.restaurant import Restaurante
+from models.cardapio.bebida import Bebida
+from models.cardapio.prato import Prato
+
 
 restaurante_praca = Restaurante('praça', 'brasileira')
 restaurante_beto = Restaurante('beto food', 'mexicana')
 restaurante_irmaos = Restaurante('two brothers', 'japonesa')
 
-restaurante_praca.receber_avaliacao('Eduardo', 10)
-restaurante_praca.receber_avaliacao('Fulano', 5)
-restaurante_praca.receber_avaliacao('Ciclano', 2)
+bebida_1 = Bebida('Coca', 5.40, 'pequena')
 
-restaurante_beto.receber_avaliacao('fulano', 2)
-restaurante_beto.receber_avaliacao('fulano2', 1)
+prato_1 = Prato('pão', 2.50, 'pão carioca')
 
 def main():
-    Restaurante.listar_restaurantes()
+    print(bebida_1)
 
 if __name__ == '__main__':
     main()
