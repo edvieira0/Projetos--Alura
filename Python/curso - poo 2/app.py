@@ -9,10 +9,13 @@ restaurante_irmaos = Restaurante('two brothers', 'japonesa')
 
 bebida_1 = Bebida('Coca', 5.40, 'pequena')
 
-prato_1 = Prato('pão', 2.50, 'pão carioca')
+prato_1 = Prato('Feijoada', 7.50, 'Feijão preto com linguiça')
+
+restaurante_praca.adicionar_cardapio(bebida_1)
+restaurante_praca.adicionar_cardapio(prato_1)
 
 def main():
-    print(bebida_1)
+    restaurante_praca.exibir_cardapio
 
 if __name__ == '__main__':
     main()
