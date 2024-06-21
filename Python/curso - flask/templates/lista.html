@@ -17,15 +17,11 @@
                 </tr>
             </thead>
             <tbody>
+                {% for i in lista_jogos %}
                 <tr>
-                    <td>God of War</td>
+                    <td>{{ i }}</td>
                 </tr>
-                <tr>
-                    <td>Skyrim</td>
-                </tr>
-                <tr>
-                    <td>Valorant</td>
-                </tr>
+                {% endfor %}
             </tbody>
         </table>
     </div>
