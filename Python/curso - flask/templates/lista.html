@@ -14,12 +14,16 @@
             <thead class="thead-default">
                 <tr>
                     <th>Nome</th>
+                    <th>Categoria</th>
+                    <th>Console</th>
                 </tr>
             </thead>
             <tbody>
-                {% for i in lista_jogos %}
+                {% for jogo in jogos %}
                 <tr>
-                    <td>{{ i }}</td>
+                    <td>{{ jogo.nome }}</td>
+                    <td>{{ jogo.categoria }}</td>
+                    <td>{{ jogo.console }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
