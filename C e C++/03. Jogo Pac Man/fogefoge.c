@@ -1,10 +1,32 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+char **mapa;
+int linhas;
+int colunas;
 
 int main(){
-    //matriz de 5x10
-    char mapa[5][10];
-    mapa[0][0] = '|';
-    mapa[4][9] = '@';
 
-    
+    FILE* f;
+    f = fopen("mapa.txt", "r");
+    if(f == 0){
+        printf("Erro na leitura do mapa\n");
+        exit(1);
+    }
+    fscanf(f, "%d %d", &linhas, &colunas);
+    printf("linhas %d colunas %d\n", linhas, colunas);
+
+    mapa = malloc(sizeof(char*) * linhas);
+    for(int i = 0; i < linhas; i++){
+        mapa[i] = malloc(sizeof(char) * (colunas+1));
+    }
+
+    for(int i = 0; i < 5; i++){
+        fscanf(f, "%s", mapa[i]);
+    }
+    for(int i = 0; i < 5; i++){
+        printf("%s\n", mapa[i]);
+    }
+    fclose(f);
+
 }
