@@ -21,5 +21,5 @@ def countTrue(lista):
             j += 1
     return j
 
-
-print(countTrue(lista=[True, False, False, True, False, True]))
+# def countTrue(lst):
+#   return len([value for value in lst if value])
