@@ -8,9 +8,18 @@
 #     return idade * 365
 
 
-def points(dois, tres):
-    dois *= 2
-    tres *= 3
-    return dois + tres
+# def points(dois, tres):
+#     dois *= 2
+#     tres *= 3
+#     return dois + tres
 
-print(points(7, 5))
+
+def countTrue(lista):
+    j = 0
+    for i in lista:
+        if i:
+            j += 1
+    return j
+
+
+print(countTrue(lista=[True, False, False, True, False, True]))
