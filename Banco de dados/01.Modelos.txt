@@ -1,0 +1,6 @@
+O modelo lógico é criado para realizar a descrição de como os dados serão armazenados no sistema. 
+Ele explora os conceitos de domínio. Nesse modelo, descrevemos as entidades, os atributos, as chaves primárias e estrangeiras e os seus relacionamentos.
+
+
+O modelo físico também é criado para descrever as tabelas, suas colunas e os relacionamentos. 
+Diferente do modelo lógico, podemos utilizar uma linguagem padrão para realizar essa representação: a linguagem SQL, utilizada para trabalhar com banco de dados relacionais.
